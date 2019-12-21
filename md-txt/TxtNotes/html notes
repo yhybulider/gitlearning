@@ -1,0 +1,17 @@
+<meta>——表示那些不能由其它html元相关元素之一表示的任何数据元信息，包括字符集属性charset。介绍、作者等。
+<em>标记出需要用户着重阅读的内容， <em> 元素是可以嵌套的，嵌套层次越深，则其包含的内容被认定为越需要着重阅读。
+CSS3 box-shadow 属性用来描述一个元素的一个或多个阴影效果，该属性几乎可以让你完成你想要的任何阴影效果。
+然而 box-shadow 属性语法和取值非常灵活，对于新手有点不容易理解。今天总结一下语法和 box-shadow 属性各种阴影效果。
+HTML <blockquote> 元素（或者 HTML 块级引用元素），代表其中的文字是引用内容。通常在渲染时，这部分的内容会
+有一定的缩进（注 中说明了如何更改）。若引文来源于网络，则可以将原内容的出处 URL 地址设置到 cite 特性上，
+若要以文本的形式告知读者引文的出处时，可以通过 <cite> 元素。
+&lt;p&gt;--显示<p>
+style="text-align;text-indent"——表示对齐方式还有缩进
+<hr style="height:  ;border:   ;">——表示分割线的高度以及边框样式
+style="font-family: ;"——设置不同字体
+<sup></sup>——上标，<sub></sub>——下标
+ol/li表示有序的排列；而且可以设置type去选择样式
+align也可以用在图片中img src ：有bottom middle top left right
+<header>——页眉  <footer>——页脚
+<a>超链接</a>——herf、name、target属性，前面的<a href="#id">去调用
+target属性有_blank _self(占领当前页面) _parent _top
