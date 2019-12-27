@@ -9,3 +9,12 @@
 3. continue writing.<br>
 里面的Java100文件夹记录了学习Java的代码
 4. 最新更改——12/21
+5. blog/里面放置的是在个人博客中的文章，部分也是放在csdn以及博客园的
+
+## 链接
+
+[个人博客](yhytj.top)
+
+[博客园](https://www.cnblogs.com/yhycoder/)
+
+[CSDN](https://blog.csdn.net/weixin_44304387)
