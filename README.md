@@ -3,7 +3,7 @@
 ## gitlearning    
   for connecting between my local file and github.<br>
   student learn by himself to `use git`
-## newly file folder
+## 文件夹说明
 1. for recording my learning notes(some book reflections);<br>
 2. language-`Chinese`;author-`yhy`;
 3. continue writing.<br>
@@ -13,7 +13,7 @@
 
 ## 链接
 
-[个人博客](yhytj.top)
+[个人博客](http://yhytj.top/)
 
 [博客园](https://www.cnblogs.com/yhycoder/)
 
