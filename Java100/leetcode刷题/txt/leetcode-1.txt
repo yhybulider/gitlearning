@@ -1,0 +1,29 @@
+class solution{
+    public int[] twoSum (int[] nums,int target){
+        //violence
+        for(int i =0; i < nums.length; i++){
+            for(int j = i+1; j < nums.length; j++){
+                if(nums[j] == target - nums[i]){
+                    return int[] {i,j};
+                }
+            }
+        }
+
+        throw new IlleagalArgumentException("no match");
+        }
+}
+
+class solution{
+    public int[] twoSum (int[] nums,int target){
+        //hashmap method
+        Map<Integer,Integer> map = new Hashmap<>();
+        for(int i =0;i < nums.length; i++){
+        int sum = target - nums[i];
+        if(map.containsKey(sum)){
+            return new int[]{map.get(sum),i};
+        }
+        map.put(nums[i],i);
+        }
+        throw new IlleagalArgumentException("no match");
+    }
+}

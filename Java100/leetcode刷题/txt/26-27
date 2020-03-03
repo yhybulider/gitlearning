@@ -1,0 +1,32 @@
+26 删除重复项
+public int deteleChongfu(int[] nums){ 
+    //首先是特殊情况
+    if(nums.length<2) {
+        return nums.length;
+    }
+    int n = 0;
+    for(int i= 1;i < nums.length; i++) {
+        if(nums[n] != nums[i]) {
+            nums[n++] = nums[i];
+        }
+
+    }
+    return n+1;
+
+}
+27 匹配相应项
+public int deteleZhiDing(int[] nums,int val) {
+    //首先也是特殊情况
+    if(nums.length < 2 ){
+        return nums.length;
+    }
+    int n = 0;
+    if(int i = 0; i < nums.length; i++) {
+        if(nums[i] != val) {
+            nums[n++] = nums[i];
+        }
+    }
+    //这里和26的不一样，因为这个只是数有几个和val不一样
+
+    return n;
+}

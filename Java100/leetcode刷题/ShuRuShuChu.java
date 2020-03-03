@@ -1,4 +1,4 @@
-package music.ShuaTi;
+// package music.ShuaTi;
 
 import java.util.Scanner;
 
@@ -16,5 +16,7 @@ public class ShuRuShuChu {
             }
             System.out.println(num);  // 输出num，即是数组中出现次数为奇数次的数
         }
+        // close the scanner
+        input.close();
     }
 }

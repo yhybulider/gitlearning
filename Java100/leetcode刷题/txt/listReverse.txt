@@ -1,0 +1,21 @@
+//利用一个新的链表
+//遍历旧的链表，每一次都使起指向新链表的头结点，便可以实现反转
+// 核心代码块
+public static void revervse(Node head) {
+    //辅助节点
+    Node cur = head.next;
+    Node next = null;
+    Node revervseNode = new Node(0);
+    //遍历
+    while(cur != null){
+        next = cur.next;
+        将cur的下一个节点指向新的链表的最前端
+        cur.next = revervseNode.next;
+        //将cur即原来的链表链接到新的链表上
+        revervseNode.next = cur;
+        //backward
+        cur = next;
+    }
+    head.next = revervseNode.next;
+    
+}

@@ -1,0 +1,12 @@
+public static void swapWithNext(Node beforep){
+    Node p,afterp;
+    
+    p = beforep.next;
+    afterp = p.next;
+
+    p.next = afterp.next;
+    beforep.next = afterp;
+    afterp.next = p;
+
+    //这里交换后的是beforep,afterp,p;
+}

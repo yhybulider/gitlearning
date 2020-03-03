@@ -1,0 +1,54 @@
+字符串查找也是比较常见的算法题目
+常见的是从一个总串中查找子字符串，并将其匹配得到所对应的首字符的索引
+KMP算法 提前做好了预算处理，即对后面的所有情况进行了预处理
+传统函数借调做法
+public int strStr(String haystack, String needle) {
+    int m=haystack.length();
+    int n=needle.length();
+    if(n==0){return 0;}
+    if(n>m){return -1;}
+    
+    for(int i=0;i<m-n+1;i++){
+        if(haystack.substring(i,i+n).equals(needle)){
+            return i;
+        }
+    }
+    return -1;
+}
+//     //暴力法求解
+    //     //特殊情况
+    //     if ( haystack.length() == 0 && needle.length()==0) {
+    //         return 0;
+    //     }
+    //     int l = haystack.length();
+    //     int s = needle.length();
+        
+    //     for (int i = 0; i < l-s+1; i++) {
+    //         int j;
+    //         for ( j = 0; j < s; j++) {
+    //             if (haystack.charAt(i+j) != needle.charAt(j)){
+    //                 //跳出当前的for循环
+    //                 break;
+
+    //             }
+    //         }
+    //         //验证当前的长度是否和j相同，相同就是匹配成功
+    //         if (j == s){
+    //             return i;
+    //         }
+          
+    //     }
+    //     return -1;
+        
+leetcode英文版本的一个top解答
+public int strStr(String haystack, String needle) {
+  for (int i = 0; ; i++) { // txt的长度
+    for (int j = 0; ; j++) { // 模式的长度
+      if (j == needle.length()) return i; // 找到结果，也就是返回第一个字符匹配出现的索引位置
+      if (i + j == haystack.length()) return -1; //不匹配的情况，txt已经遍历完了，最终结果还没得出来
+      if (needle.charAt(j) != haystack.charAt(i + j)) break; // 在needle [j]之后停止比较，因此i将递增并循环重复。
+    }
+  }
+}
+
+KMP算法的关键点是完成，子串的子匹配数组的完成，以及处理当索引不一致的时候，应该移动几位来进行比较
